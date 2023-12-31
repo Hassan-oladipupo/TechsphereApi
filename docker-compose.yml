@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:latest
+
+  techsphere:
+    build: .
+    environment:
+      - DOCKER_API_VERSION=1.43
+    ports:
+      - 0000:0000 # Change 8000 to the desired port (8100 in this example)
+    volumes:
+      - ./:/app
