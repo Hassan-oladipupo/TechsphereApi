@@ -18,7 +18,7 @@
         "snc/redis-bundle": "^4.7",
         "symfony/console": "6.2.*",
         "symfony/dotenv": "6.2.*",
-        "symfony/flex": "^2",
+        "symfony/flex": "^2.4",
         "symfony/framework-bundle": "6.2.*",
         "symfony/mime": "6.2.*",
         "symfony/property-access": "6.2.*",
