@@ -17,7 +17,11 @@ RUN apt-get install -y symfony-cli
 
 WORKDIR /app/
 
-COPY . .
+COPY composer.json /app/
+
+RUN composer install --no-interaction --no-scripts
+
+COPY . /app/
 # Expose the port your Symfony app will run on (replace 8000 with your actual port)
 EXPOSE 0000
 
